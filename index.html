@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>al-COV: COVID-19 Info</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt=""/>
+            <p>al-COV</p>
+        </div>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="latest-report">
+                <div class="country">
+                    <div class="name">Loading....</div>
+                    <img class="change-country" src="images/change.png" alt=""/>
+                    <div class="search-country hide">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search country..."/>
+                            <img class="close" src="images/close.png" alt=""/>
+                        </div>
+                        <div class="country-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="total-cases">
+                    <div class="title">Total Cases</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="recovered">
+                    <div class="title">Recovered</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">Deaths</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="axes-line-chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="./js/countries.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
